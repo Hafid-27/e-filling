@@ -67,7 +67,8 @@ CREATE TABLE `tbl_peminjam` (
 INSERT INTO `tbl_peminjam` (`id_peminjam`, `username`, `password`, `name`, `email`) VALUES
 (38, 'yuda', 'oVSXKtKcnClfbg2TI8pLJnxV8LlGsPCA3MZg6iuZ41efIDG06I59Q+1DGtQwuOsnLApsmbUAN0zePjqm3/QbMA==', 'Yuda Aduy', 'yda@ady.com'),
 (39, 'wardah', '9H2YHywNRJMom3YesNU4gorGVRDDbfl6SLTP3UXCpR+fQ//Os+5zOBSoo5GxImCecYkEouP4ERGNKLgEq1u4zA==', 'wardah', 'wardah@gmail.com'),
-(40, 'rudi', 'epNBmX7iLmVOsMgDsXUO2trS/R2FSGy31fvdVrxmoZi3GC3hqTgaL5+H/4FlA965Afji39rgTVxr4exVsXXQWA==', 'rudi', 'rudi@gmail.com');
+(40, 'rudi', 'epNBmX7iLmVOsMgDsXUO2trS/R2FSGy31fvdVrxmoZi3GC3hqTgaL5+H/4FlA965Afji39rgTVxr4exVsXXQWA==', 'rudi', 'rudi@gmail.com'),
+(2, 'Haykal Rizki Amarullah', '$2y$10$57ScHcVSna48sUWcEPgf2ONNQbUXQxyow6A0SJ.L24ERWwRLg.Uoq', 'Haykal_rizki', 'Haykalrizki59093@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -89,7 +90,8 @@ CREATE TABLE `tbl_petugas` (
 --
 
 INSERT INTO `tbl_petugas` (`id_petugas`, `username`, `password`, `name`, `email`, `photo`) VALUES
-(1, 'superadmin', 'KkR/ln1U0b8C79VfG3z3AG0Niddn6qhc2/3hc6DEabVdkmJNIwNx9ep2Vfs4a7yukDmm6RtG+b3rb6Jb1sCqlQ==', 'serdaducoding', 'serdaducoding@gmail.com', '');
+(1, 'superadmin', 'KkR/ln1U0b8C79VfG3z3AG0Niddn6qhc2/3hc6DEabVdkmJNIwNx9ep2Vfs4a7yukDmm6RtG+b3rb6Jb1sCqlQ==', 'serdaducoding', 'serdaducoding@gmail.com', ''),
+(2, 'Haykal Rizki Amarullah', '$2y$10$57ScHcVSna48sUWcEPgf2ONNQbUXQxyow6A0SJ.L24ERWwRLg.Uoq', 'Haykal_rizki', 'Haykalrizki59093@gmail.com', '');
 
 -- --------------------------------------------------------
 
