@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02 Nov 2018 pada 17.44
--- Versi Server: 10.1.30-MariaDB
--- PHP Version: 5.6.33
+-- Generation Time: Oct 19, 2022 at 08:41 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sarpras`
+-- Database: `e-filling`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_barang`
+-- Table structure for table `tbl_barang`
 --
 
 CREATE TABLE `tbl_barang` (
@@ -37,21 +36,20 @@ CREATE TABLE `tbl_barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbl_barang`
+-- Dumping data for table `tbl_barang`
 --
 
 INSERT INTO `tbl_barang` (`id_barang`, `name`, `desc`, `stock`, `status`) VALUES
-(1, 'bola voli', 'ini bola voli', 40, 'tampilkan'),
-(2, 'a', 'b', 7, 'tampilkan'),
+(1, 'bola voli', 'ini bola voli', 38, 'tampilkan'),
 (3, 'b', 'a', 5, 'tampilkan'),
 (6, 'z', 'z', 10, 'sembunyikan'),
-(7, 'q', 'q', 8, 'tampilkan'),
-(10, 'qw', 'qw', 0, 'tampilkan');
+(10, 'qw', 'qw', 0, 'tampilkan'),
+(11, 'document a', 'dokument pt jtec', 564, 'tampilkan');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_peminjam`
+-- Table structure for table `tbl_peminjam`
 --
 
 CREATE TABLE `tbl_peminjam` (
@@ -63,18 +61,27 @@ CREATE TABLE `tbl_peminjam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbl_peminjam`
+-- Dumping data for table `tbl_peminjam`
 --
 
 INSERT INTO `tbl_peminjam` (`id_peminjam`, `username`, `password`, `name`, `email`) VALUES
-(30, 'purwa', 'J6mqsm/D+ZPW/0/LsWHQQMT6EwSlp9O6ionun3F6DwSiUUt6670cDXsHzNW206+59GEemoljs93BWQ8KWAN78g==', 'Purwa Sabrang Ramadhan ', 'psr@a.com'),
+(30, 'purwa', '	\r\nUzILMV9oV2dWYg==', 'Purwa Sabrang Ramadhan ', 'psr@a.com'),
 (38, 'yuda', 'oVSXKtKcnClfbg2TI8pLJnxV8LlGsPCA3MZg6iuZ41efIDG06I59Q+1DGtQwuOsnLApsmbUAN0zePjqm3/QbMA==', 'Yuda Aduy', 'yda@ady.com'),
-(39, 'wardah', '9H2YHywNRJMom3YesNU4gorGVRDDbfl6SLTP3UXCpR+fQ//Os+5zOBSoo5GxImCecYkEouP4ERGNKLgEq1u4zA==', 'wardah', 'wardah@gmail.com');
+(39, 'wardah', '9H2YHywNRJMom3YesNU4gorGVRDDbfl6SLTP3UXCpR+fQ//Os+5zOBSoo5GxImCecYkEouP4ERGNKLgEq1u4zA==', 'wardah', 'wardah@gmail.com'),
+(40, 'hafid', '1234567', 'hafidassifa', 'hafidrobbi27@gmail.com'),
+(41, 'haykal', 'Bz8BaFEsBmkLawU4BjsINVYy', 'haykal rizki', 'haykal456@gmail.com'),
+(42, 'asep', 'AjMBelIzDnoENFMwBzgJMg==', 'asep sunandar', 'asep@gmail.com'),
+(43, 'hhh', 'AWAJM15pV2cLPw==', 'hyhy', 'haykal456@gmail.com'),
+(45, 'robbi', '12345', 'robbi', 'robbi@gmail.com'),
+(46, 'johan', 'XTwKMFJlV2dXYw==', 'johan1', 'asep@gmail.com'),
+(47, 'superadmin', 'XTwKMFJlV2dXYw==', 'ddd', 'hafid27@gmail.com'),
+(48, 'guest', 'VDUONFRjBzcGMg==', 'hafid', 'hafid27@gmail.com'),
+(49, 'kakak', 'UzILMV9oV2dWYg==', 'kakaka', 'kaka@gmail.com');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_petugas`
+-- Table structure for table `tbl_petugas`
 --
 
 CREATE TABLE `tbl_petugas` (
@@ -87,16 +94,17 @@ CREATE TABLE `tbl_petugas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbl_petugas`
+-- Dumping data for table `tbl_petugas`
 --
 
 INSERT INTO `tbl_petugas` (`id_petugas`, `username`, `password`, `name`, `email`, `photo`) VALUES
-(1, 'superadmin', 'KkR/ln1U0b8C79VfG3z3AG0Niddn6qhc2/3hc6DEabVdkmJNIwNx9ep2Vfs4a7yukDmm6RtG+b3rb6Jb1sCqlQ==', 'Purwa Sabrang', 'Psr@email.com', '');
+(1, 'superadmin', 'XTwKMFJlV2dXYw==', 'hafid', 'hafidrobbi@email.com', ''),
+(3, 'hafid', 'VDUONFRjBzcGMg==', 'hafidrobbi', 'hafidrobbi2@gmail.com', '');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_pinjam`
+-- Table structure for table `tbl_pinjam`
 --
 
 CREATE TABLE `tbl_pinjam` (
@@ -110,19 +118,21 @@ CREATE TABLE `tbl_pinjam` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbl_pinjam`
+-- Dumping data for table `tbl_pinjam`
 --
 
 INSERT INTO `tbl_pinjam` (`id_pinjam`, `id_peminjam`, `id_barang`, `jml`, `tgl_pinjam`, `tgl_kembali`, `status`) VALUES
 (43, 38, 1, 5, '2018-11-02 21:32:43', '0000-00-00 00:00:00', '1'),
 (45, 38, 2, 3, '2018-11-02 21:33:02', '0000-00-00 00:00:00', '0'),
 (46, 38, 3, 5, '2018-11-02 23:32:16', '0000-00-00 00:00:00', '0'),
-(47, 30, 1, 5, '2018-11-02 23:42:06', '0000-00-00 00:00:00', '0');
+(47, 30, 1, 5, '2018-11-02 23:42:06', '0000-00-00 00:00:00', '0'),
+(50, 41, 11, 2, '2022-10-06 22:41:13', '2022-10-06 22:41:53', '2'),
+(52, 49, 1, 2, '2022-10-12 21:03:22', '0000-00-00 00:00:00', '1');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_riwayat`
+-- Table structure for table `tbl_riwayat`
 --
 
 CREATE TABLE `tbl_riwayat` (
@@ -136,7 +146,7 @@ CREATE TABLE `tbl_riwayat` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbl_riwayat`
+-- Dumping data for table `tbl_riwayat`
 --
 
 INSERT INTO `tbl_riwayat` (`id_pinjam`, `id_peminjam`, `id_barang`, `jml`, `tgl_pinjam`, `tgl_kembali`, `status`) VALUES
@@ -152,7 +162,10 @@ INSERT INTO `tbl_riwayat` (`id_pinjam`, `id_peminjam`, `id_barang`, `jml`, `tgl_
 (40, 38, 1, 5, '2018-11-02 21:29:11', '2018-11-02 21:31:53', '1'),
 (41, 38, 2, 3, '2018-11-02 21:30:47', '2018-11-02 21:31:54', '1'),
 (42, 38, 2, 2, '2018-11-02 21:30:54', '2018-11-02 21:31:55', '1'),
-(44, 38, 2, 2, '2018-11-02 21:32:58', '0000-00-00 00:00:00', '0');
+(44, 38, 2, 2, '2018-11-02 21:32:58', '0000-00-00 00:00:00', '0'),
+(49, 41, 11, 1, '2022-10-06 22:40:16', '0000-00-00 00:00:00', '0'),
+(48, 40, 1, 4, '2022-10-06 21:14:28', '2022-10-07 18:55:58', '1'),
+(51, 49, 1, 5, '2022-10-09 20:42:12', '2022-10-09 20:43:57', '1');
 
 --
 -- Indexes for dumped tables
@@ -190,25 +203,25 @@ ALTER TABLE `tbl_pinjam`
 -- AUTO_INCREMENT for table `tbl_barang`
 --
 ALTER TABLE `tbl_barang`
-  MODIFY `id_barang` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_barang` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tbl_peminjam`
 --
 ALTER TABLE `tbl_peminjam`
-  MODIFY `id_peminjam` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id_peminjam` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `tbl_petugas`
 --
 ALTER TABLE `tbl_petugas`
-  MODIFY `id_petugas` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_petugas` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_pinjam`
 --
 ALTER TABLE `tbl_pinjam`
-  MODIFY `id_pinjam` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id_pinjam` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

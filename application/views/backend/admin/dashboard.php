@@ -15,7 +15,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $jml_barang ?></div>
-                                    <div>Jumlah Data Barang</div>
+                                    <div>Jumlah Dokumen</div>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $ttl_barang ?></div>
-                                    <div>Barang Tersedia</div>
+                                    <div>Dokumen Tersedia</div>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $ttl_pinjam ?></div>
-                                    <div>Barang Dipinjam</div>
+                                    <div>Dokumen Dipinjam</div>
                                 </div>
                             </div>
                         </div>
