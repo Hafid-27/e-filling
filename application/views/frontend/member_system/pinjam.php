@@ -1,6 +1,6 @@
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Barang Dipinjam</h1>
+                    <h1 class="page-header">Dokumen</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -9,7 +9,7 @@
               <div class="col-lg-12">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h3 class="panel-title">Barang Dipinjam</h3>
+                    <h3 class="panel-title">List Dokumen Yang Belum Dikembalikan</h3>
                   </div>
                   <!-- /.panel-heading -->
                   <div class="panel-body">
@@ -17,7 +17,7 @@
                       <thead>
                         <tr>
                           <th>ID Pinjam</th>
-                          <th>Nama Barang</th>
+                          <th>Nama Dokumen</th>
                           <th>Jumlah Pinjam</th>
                           <th>Tanggal Pinjam</th>
                           <th>Tanggal Kembali</th>

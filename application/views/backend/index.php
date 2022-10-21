@@ -125,10 +125,10 @@
               </ul>
             </li>
             <li>
-              <a href="#"><i class="fa fa-archive fa-fw"></i> Stok Dokumen<span class="fa arrow"></span></a></a>
+              <a href="#"><i class="fa fa-archive fa-fw"></i> Dokumen<span class="fa arrow"></span></a></a>
               <ul class="nav nav-second-level">
                 <li>
-                  <a href="<?php echo base_url('admin_system/barang') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Data Dokumen</a>
+                  <a href="<?php echo base_url('admin_system/barang') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Stok Dokumen</a>
                 </li>
                 <li>
                   <a href="<?php echo base_url('admin_system/barang_form') ?>"><i class="fa fa-plus fa-fw"></i> Add Dokumen</a>

@@ -93,10 +93,10 @@
                           <a href="<?php echo base_url('member/dashboard') ?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                          <a href="<?php echo base_url('member_system/barang') ?>"><i class="fa fa-archive fa-fw"></i> Data Barang</a>
+                          <a href="<?php echo base_url('member_system/barang') ?>"><i class="fa fa-archive fa-fw"></i> Dokumen Tersedia</a>
                         </li>
                         <li>
-                          <a href="<?php echo base_url('member_system/pinjam') ?>"><i class="fa fa-book fa-fw"></i> Barang Dipinjam</a>
+                          <a href="<?php echo base_url('member_system/pinjam') ?>"><i class="fa fa-book fa-fw"></i> Dokumen Dipinjam</a>
                         </li>
                         <li>
                           <a href="<?php echo base_url('member_system/riwayat') ?>"><i class="fa fa-history fa-fw"></i> Riwayat Peminjaman</a>

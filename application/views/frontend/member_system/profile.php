@@ -8,7 +8,7 @@
 			<!-- START DEFAULT DATATABLE -->
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h3 class="panel-title">#</h3>
+					<h3 class="panel-title">Identitas Profil</h3>
 				</div>
 				<form class="form-horizontal" method="POST" id="barang_pinjam" action="<?php echo base_url('member_system/barang_pinjam_act'); ?>">
 				<div class="panel-body">

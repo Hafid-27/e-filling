@@ -15,7 +15,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $jml_barang ?></div>
-                                    <div>Jumlah Dokumen</div>
+                                    <div>Dokumen Tersedia</div>
                                 </div>
                             </div>
                         </div>
@@ -37,11 +37,11 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $ttl_barang ?></div>
-                                    <div>Dokumen Tersedia</div>
+                                    <div>Riwayat Peminjaman</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="<?php echo base_url('admin_system/barang') ?>">
+                        <a href="<?php echo base_url('admin_system/riwayat') ?>">
                             <div class="panel-footer">
                                 <span class="pull-left">View Details</span>
                                 <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="col-xs-9 text-right">
                                     <div class="huge"><?php echo $jml_peminjam ?></div>
-                                    <div>Jumlah Peminjam</div>
+                                    <div>Akun Peminjam</div>
                                 </div>
                             </div>
                         </div>

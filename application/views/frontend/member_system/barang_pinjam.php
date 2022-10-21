@@ -1,6 +1,6 @@
 <div class="row">
 		<div class="col-lg-12">
-				<h1 class="page-header">Form Pinjam Barang</h1>
+				<h1 class="page-header">Dokumen</h1>
 		</div>
 		<!-- /.col-lg-12 -->
 </div>
@@ -8,7 +8,7 @@
 			<!-- START DEFAULT DATATABLE -->
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h3 class="panel-title">Form Pinjam Barang</h3>
+					<h3 class="panel-title">Form Pinjam Dokumen</h3>
 				</div>
 				<form class="form-horizontal" method="POST" id="barang_pinjam" action="<?php echo base_url('member_system/barang_pinjam_act'); ?>">
 					<input type="hidden" name="id_peminjam" value="<?php echo $userdata['id_peminjam'] ?>">
@@ -34,7 +34,7 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label class="col-md-4 col-xs-12 control-label">Deskripsi</label>
+					<label class="col-md-4 col-xs-12 control-label">Dokumen</label>
 					<div class="col-md-5 col-xs-12">
 						<input type="text" name="" class="form-control" value="<?php echo $data->desc; ?>" disabled>
 					</div>
