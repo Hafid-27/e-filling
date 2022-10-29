@@ -92,77 +92,77 @@
                     </div>
                     <!--<div class="image mb-4 text-center">
                         <img src="<?= base_url('asset-login/images/login/pos_indonesia.png'); ?>" title="poltek" width="150" />
+                    </div>-->
+                    <div class="title-box">
+                        <h2><span>Sistem Peminjaman Dokumen PT. TT TECHNO PARK INDONESIA</span></h2>
+                        <div class="title">Login Member</div>
                     </div>
-                    <div class="title-box">-->
-                    <h2><span>Sistem Peminjaman Dokumen PT. TT TECHNO PARK INDONESIA</span></h2>
-                    <div class="title">Login Member</div>
-                </div>
 
-                <!-- Login Form -->
-                <div class="panel-body styled-form">
-                    <form class="text-center" action="do_login" method="post" role="form" id="login-form">
-                        <div role="alert" class="alert alert-success hidden">
-                            <strong>Berhasil!</strong> <span>Login berhasil, anda akan dialihkan.</span>
-                        </div>
-                        <div role="alert" class="alert alert-warning hidden">
-                            <strong>Memproses!</strong> <span>Mohon tunggu ...</span>
-                        </div>
-                        <div role="alert" class="alert alert-danger hidden">
-                            <strong>Gagal!</strong> <span>Login gagal.</span>
-                        </div>
+                    <!-- Login Form -->
+                    <div class="panel-body styled-form">
+                        <form class="text-center" action="do_login" method="post" role="form" id="login-form">
+                            <div role="alert" class="alert alert-success hidden">
+                                <strong>Berhasil!</strong> <span>Login berhasil, anda akan dialihkan.</span>
+                            </div>
+                            <div role="alert" class="alert alert-warning hidden">
+                                <strong>Memproses!</strong> <span>Mohon tunggu ...</span>
+                            </div>
+                            <div role="alert" class="alert alert-danger hidden">
+                                <strong>Gagal!</strong> <span>Login gagal.</span>
+                            </div>
 
-                        <fieldset>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Username" name="username" type="text" autofocus>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                            </div>
-                            <!-- <div class="checkbox">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                </div>
+                                <!-- <div class="checkbox">
                                     <label>
                                         <input name="remember" type="checkbox" value="Remember Me">Remember Me
                                     </label>
                                 </div> -->
-                            <!-- Change this to a button or input when using this as a form -->
-                            <div class="form-group text-center">
-                                <button class="theme-btn btn-block btn-style-three"><span class="txt">Login</span></button>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="or text-danger">Hubungi Administrator</div>
-                            </div>
-
-                            <div class="form-group mb-4">
-                                <div class="users">untuk registrasi akun / lupa password
-                                    <!-- <a href="#">Signup</a> -->
+                                <!-- Change this to a button or input when using this as a form -->
+                                <div class="form-group text-center">
+                                    <button class="theme-btn btn-block btn-style-three"><span class="txt">Login</span></button>
                                 </div>
-                            </div>
 
-                        </fieldset>
-                    </form>
+                                <div class="form-group">
+                                    <div class="or text-danger">Hubungi Administrator</div>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <div class="users">untuk registrasi akun / lupa password
+                                        <!-- <a href="#">Signup</a> -->
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+
                 </div>
-
             </div>
         </div>
-    </div>
-    <!-- End Login Section -->
+        <!-- End Login Section -->
 
-    <!-- Main Footer -->
-    <footer class="main-footer">
+        <!-- Main Footer -->
+        <footer class="main-footer">
 
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <!-- Column -->
-                    <div class="column col-lg-12 col-md-12 col-sm-12">
-                        <div class="copyright text-right">Copyright &copy;PT. TT TECHNO PARK INDONESIA</div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="row clearfix">
+                        <!-- Column -->
+                        <div class="column col-lg-12 col-md-12 col-sm-12">
+                            <div class="copyright text-right">Copyright &copy;PT. TT TECHNO PARK INDONESIA</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </footer>
+        </footer>
 
     </div>
     <!--End pagewrapper-->

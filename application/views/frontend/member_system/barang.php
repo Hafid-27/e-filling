@@ -1,6 +1,6 @@
             <div class="row">
               <div class="col-lg-12">
-                <h1 class="page-header">Data Barang</h1>
+                <h1 class="page-header">List Document</h1>
               </div>
               <!-- /.col-lg-12 -->
             </div>
@@ -9,7 +9,7 @@
               <div class="col-lg-12">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h3 class="panel-title">Data Document</h3>
+                    <h3 class="panel-title">List Document</h3>
                   </div>
                   <!-- /.panel-heading -->
                   <div class="panel-body">
