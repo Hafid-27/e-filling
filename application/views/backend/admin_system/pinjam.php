@@ -10,7 +10,7 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="text-right">
-                      <div class="pull-left panel-title ppb">Permintaan Peminjaman Barang</div>
+                      <div class="pull-left panel-title ppb">Permintaan Peminjaman Dokumen</div>
                       <div class="clearfix"><a href="javascript:;" onclick="window.print('_blank')" class="btn btn-sm btn-primary print">Print</a></div>
                     </div>
                   </div>
@@ -20,8 +20,8 @@
                       <thead>
                         <tr>
                           <th>ID Pinjam</th>
-                          <th>Nama Peminjam</th>
-                          <th>Nama Barang</th>
+                          <th>Nama Karyawan</th>
+                          <th>Nama Dokumen</th>
                           <th>Jumlah Pinjam</th>
                           <th>Tanggal Pinjam</th>
                           <th class="setujui">Setujui</th>

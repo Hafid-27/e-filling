@@ -10,7 +10,7 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="text-right">
-                      <div class="pull-left panel-title">Riwayat Peminjaman Barang</div>
+                      <div class="pull-left panel-title">Riwayat Peminjaman Dokumen</div>
                       <a class="btn btn-danger btn-add" href="<?php echo base_url('admin_system/riwayat_clear') ?>"><i class="fa fa-times"></i> Clear History</a>
                       <div class="clearfix"></div>
                     </div>
@@ -21,8 +21,8 @@
                       <thead>
                         <tr>
                           <th>ID Pinjam</th>
-                          <th>Nama Peminjam</th>
-                          <th>Nama Barang</th>
+                          <th>Nama Karyawan</th>
+                          <th>Nama Dokumen</th>
                           <th>Jumlah Pinjam</th>
                           <th>Tanggal Pinjam</th>
                           <th>Tanggal Kembali</th>

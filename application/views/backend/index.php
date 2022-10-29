@@ -117,21 +117,21 @@
               <a href="#"><i class="fa fa-users fa-fw"></i> Data Peminjam<span class="fa arrow"></span></a></a>
               <ul class="nav nav-second-level">
                 <li>
-                  <a href="<?php echo base_url('admin_system/peminjam') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Data Peminjam</a>
+                  <a href="<?php echo base_url('admin_system/peminjam') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Akun Karyawan</a>
                 </li>
                 <li>
-                  <a href="<?php echo base_url('admin_system/peminjam_form') ?>"><i class="fa fa-plus fa-fw"></i> Form Data Peminjam</a>
+                  <a href="<?php echo base_url('admin_system/peminjam_form') ?>"><i class="fa fa-plus fa-fw"></i> Add Akun Karyawan</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#"><i class="fa fa-archive fa-fw"></i> Stok Barang<span class="fa arrow"></span></a></a>
+              <a href="#"><i class="fa fa-archive fa-fw"></i> Dokumen<span class="fa arrow"></span></a></a>
               <ul class="nav nav-second-level">
                 <li>
-                  <a href="<?php echo base_url('admin_system/barang') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Data Barang</a>
+                  <a href="<?php echo base_url('admin_system/barang') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Stok Dokumen</a>
                 </li>
                 <li>
-                  <a href="<?php echo base_url('admin_system/barang_form') ?>"><i class="fa fa-plus fa-fw"></i> Form Data Barang</a>
+                  <a href="<?php echo base_url('admin_system/barang_form') ?>"><i class="fa fa-plus fa-fw"></i> Add Dokumen</a>
                 </li>
               </ul>
             </li>
@@ -148,7 +148,7 @@
               <a href="#"><i class="fa fa-flag fa-fw"></i> Laporan<span class="fa arrow"></span></a></a>
               <ul class="nav nav-second-level">
                 <li>
-                  <a href="<?php echo base_url('admin_system/laporan_pinjam') ?>"><i class="fa fa-flag-checkered fa-fw"></i> Barang Yang Sedang Dipinjam</a>
+                  <a href="<?php echo base_url('admin_system/laporan_pinjam') ?>"><i class="fa fa-flag-checkered fa-fw"></i> Dokumen Yang Sedang Dipinjam</a>
                 </li>
                 <li>
                   <a href="<?php echo base_url('admin_system/form_laporan_bulanan') ?>"><i class="fa fa-flag-checkered fa-fw"></i> Laporan Bulanan</a>

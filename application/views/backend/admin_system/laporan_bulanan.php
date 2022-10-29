@@ -19,7 +19,7 @@
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                       <thead>
                         <tr>
-                          <th>Nama Peminjam</th>
+                          <th>Nama Karyawan</th>
                           <th>Jumlah Pinjam</th>
                         </tr>
                       </thead>

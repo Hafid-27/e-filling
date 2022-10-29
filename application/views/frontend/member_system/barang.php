@@ -1,6 +1,6 @@
             <div class="row">
               <div class="col-lg-12">
-                <h1 class="page-header">Data Document</h1>
+                <h1 class="page-header">Data Barang</h1>
               </div>
               <!-- /.col-lg-12 -->
             </div>
@@ -17,7 +17,7 @@
                       <thead>
                         <tr>
                           <th>ID</th>
-                          <th>Nama</th>
+                          <th>Nama Dokumen</th>
                           <th>Deskripsi</th>
                           <th>Stock</th>
                           <th>Pinjam</th>

@@ -76,7 +76,7 @@ INSERT INTO `tbl_peminjam` (`id_peminjam`, `username`, `password`, `name`, `emai
 (46, 'johan', 'XTwKMFJlV2dXYw==', 'johan1', 'asep@gmail.com'),
 (47, 'superadmin', 'XTwKMFJlV2dXYw==', 'ddd', 'hafid27@gmail.com'),
 (48, 'guest', 'VDUONFRjBzcGMg==', 'hafid', 'hafid27@gmail.com'),
-(49, 'kakak', 'UzILMV9oV2dWYg==', 'kakaka', 'kaka@gmail.com');
+(49, 'kakak', 'UzILMV9oV2dWYg==', 'kakak', 'kaka@gmail.com');
 
 -- --------------------------------------------------------
 

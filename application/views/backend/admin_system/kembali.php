@@ -1,6 +1,6 @@
             <div class="row">
               <div class="col-lg-12">
-                <h1 class="page-header pp">Permintaan Pengembalian</h1>
+                <h1 class="page-header pp">Pengembalian Dokumen</h1>
               </div>
               <!-- /.col-lg-12 -->
             </div>
@@ -10,7 +10,7 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="text-right">
-                      <div class="pull-left panel-title ppb">Permintaan Pengembalian Barang</div>
+                      <div class="pull-left panel-title ppb">Permintaan Pengembalian Dokumen</div>
                       <div class="clearfix"><a href="" onclick="window.print()" class="btn btn-primary btn-sm print">Print</a></div>
                     </div>
                   </div>
@@ -20,8 +20,8 @@
                       <thead>
                         <tr>
                           <th>ID Pinjam</th>
-                          <th>Nama Peminjam</th>
-                          <th>Nama Barang</th>
+                          <th>Nama Karyawan</th>
+                          <th>Nama Dokumen</th>
                           <th>Jumlah Pinjam</th>
                           <th>Tanggal Pinjam</th>
                           <th>Tanggal Kembali</th>

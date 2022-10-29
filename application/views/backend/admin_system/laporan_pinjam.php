@@ -1,6 +1,6 @@
             <div class="row">
               <div class="col-lg-12">
-                <h1 class="page-header bd">Barang Dipinjam</h1>
+                <h1 class="page-header bd">Dokumen Dipinjam</h1>
               </div>
               <!-- /.col-lg-12 -->
             </div>
@@ -10,7 +10,7 @@
                 <div class="panel panel-default">
                   <div class="panel-heading">
                     <div class="text-right">
-                      <div class="pull-left panel-title lbsd">Laporan Barang Yang Sedang Dipinjam</div>
+                      <div class="pull-left panel-title lbsd">Laporan Dokumen Yang Sedang Dipinjam</div>
                       <div class="clearfix"><a href="" onclick="window.print()" class="btn btn-primary btn-sm print">Print</a></div>
                     </div>
                   </div>
@@ -20,8 +20,8 @@
                       <thead>
                         <tr>
                           <th>ID Pinjam</th>
-                          <th>Nama Peminjam</th>
-                          <th>Nama Barang</th>
+                          <th>Nama Karyawan</th>
+                          <th>Nama Dokumen</th>
                           <th>Jumlah Pinjam</th>
                           <th>Tanggal Pinjam</th>
                         </tr>
