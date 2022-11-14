@@ -34,7 +34,7 @@
                           <tr>
                             <td><?php echo $d1->id_pinjam ?></td>
                             <td><?php echo $d1->name_peminjam ?></td>
-                            <td><?php echo $d1->name_barang ?></td>
+                            <td><?php echo $d1->name_dokumen ?></td>
                             <td><?php echo $d1->jml ?></td>
                             <td><?php echo $d1->tgl_pinjam ?></td>
                             <td class="text-center"><?php if ($d1->tgl_kembali == '0000-00-00 00:00:00') echo 'N/A';

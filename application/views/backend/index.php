@@ -82,7 +82,7 @@
       </div>
       <!-- /.navbar-header -->
 
-      <ul class="nav navbar-top-links navbar-right">
+      <!--<ul class="nav navbar-top-links navbar-right">
 
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -100,16 +100,16 @@
 
         </li>
 
-      </ul>
+      </ul>-->
       <!-- /.navbar-top-links -->
 
       <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
           <ul class="nav" id="side-menu">
 
-            <li>
+            <!--<li>
               <a href="<?php echo base_url() ?>"><img src="<?= base_url('asset-login/images/login/pos_indonesia.png'); ?>" title="poltek" width="40" /> <b> Administrator</b></a>
-            </li>
+            </li>-->
             <li>
               <a href="<?php echo base_url('admin/dashboard') ?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
@@ -128,10 +128,10 @@
               <a href="#"><i class="fa fa-archive fa-fw"></i> Dokumen<span class="fa arrow"></span></a></a>
               <ul class="nav nav-second-level">
                 <li>
-                  <a href="<?php echo base_url('admin_system/barang') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Stok Dokumen</a>
+                  <a href="<?php echo base_url('admin_system/dokumen') ?>"><i class="fa fa-eye fa-fw"></i> Lihat Stok Dokumen</a>
                 </li>
                 <li>
-                  <a href="<?php echo base_url('admin_system/barang_form') ?>"><i class="fa fa-plus fa-fw"></i> Add Dokumen</a>
+                  <a href="<?php echo base_url('admin_system/dokumen_form') ?>"><i class="fa fa-plus fa-fw"></i> Add Dokumen</a>
                 </li>
               </ul>
             </li>
@@ -173,7 +173,7 @@
     <!-- /#page-wrapper -->
 
     <div class="panel-footer">
-      <div class="copyright text-right text-primary">Copyright &copy; 2021 Elektro PHB</div>
+      <div class="copyright text-right text-primary">Copyright &copy; 2022 UBSI Kelompok 4</div>
     </div>
   </div>
   <!-- /#wrapper -->
@@ -263,6 +263,9 @@
         name: {
           required: true
         },
+        kode: {
+          required: true
+        },
         email: {
           required: true
         },
@@ -295,10 +298,16 @@
 
   <!-- WARNING VALIDATE SCRIPT  -->
   <script type="text/javascript">
-    var jvalidate = $("#barang_form").validate({
+    var jvalidate = $("#dokumen_form").validate({
       ignore: [],
       rules: {
         name: {
+          required: true
+        },
+        nama_pt: {
+          required: true
+        },
+        kode: {
           required: true
         },
         desc: {
@@ -313,21 +322,21 @@
       },
       submitHandler: function(form) {
         var target = $(form).attr('action');
-        $('#barang_form .alert-warning').removeClass('hidden');
-        $('#barang_form .alert-success').addClass('hidden');
-        $('#barang_form .alert-danger').addClass('hidden');
+        $('#dokumen_form .alert-warning').removeClass('hidden');
+        $('#dokumen_form .alert-success').addClass('hidden');
+        $('#dokumen_form .alert-danger').addClass('hidden');
         $.ajax({
           url: target,
           type: 'POST',
           dataType: 'json',
           data: $(form).serialize(),
           success: function(response) {
-            $('#barang_form .alert-warning').addClass('hidden');
+            $('#dokumen_form .alert-warning').addClass('hidden');
             if (response.status == 'ok') {
-              $('#barang_form .alert-success').removeClass('hidden').children('span').text(response.msg);
+              $('#dokumen_form .alert-success').removeClass('hidden').children('span').text(response.msg);
               window.location.href = response.redirect;
             } else
-              $('#barang_form .alert-danger').removeClass('hidden').children('span').text(response.msg);
+              $('#dokumen_form .alert-danger').removeClass('hidden').children('span').text(response.msg);
           },
           error: function(jqXHR, textStatus, errorThrown) {
             alert(textStatus, errorThrown);

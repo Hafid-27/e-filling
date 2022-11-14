@@ -1,6 +1,6 @@
             <div class="row">
               <div class="col-lg-12">
-                <h1 class="page-header">List Document</h1>
+                <h1 class="page-header">Pengajuan Peminjaman Document</h1>
               </div>
               <!-- /.col-lg-12 -->
             </div>
@@ -18,6 +18,8 @@
                         <tr>
                           <th>ID</th>
                           <th>Nama Dokumen</th>
+                          <th>Nama Perusahaan</th>
+                          <th>kode</th>
                           <th>Deskripsi</th>
                           <th>Stock</th>
                           <th>Pinjam</th>
@@ -26,13 +28,15 @@
                       <tbody>
                         <?php foreach ($data as $d1) { ?>
                           <tr>
-                            <td><?php echo $d1->id_barang ?></td>
+                            <td><?php echo $d1->id_dokumen ?></td>
                             <td><?php echo $d1->name ?></td>
+                            <td><?php echo $d1->nama_pt ?></td>
+                            <td><?php echo $d1->kode ?></td>
                             <td><?php echo $d1->desc ?></td>
                             <td><?php echo $d1->stock ?></td>
                             <td class="text-center">
-                              <form action="<?php echo base_url('member_system/barang_pinjam') ?>" method="post">
-                                <input type="hidden" name="id" value="<?php echo $d1->id_barang ?>">
+                              <form action="<?php echo base_url('member_system/dokumen_pinjam') ?>" method="post">
+                                <input type="hidden" name="id" value="<?php echo $d1->id_dokumen ?>">
                                 <button class="btn btn-danger btn-xs btn-delete" type="submit" data-original-title="delete" data-placement="top" data-toggle="tooltip"><i class="fa fa-book"></i> Pinjam</button>
                               </form>
                             </td>

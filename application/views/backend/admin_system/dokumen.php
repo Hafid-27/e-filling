@@ -11,16 +11,19 @@
                   <div class="panel-heading">
                     <div class="text-right">
                       <div class="pull-left panel-title">List Dokumen</div>
-                      <a class="btn btn-success btn-add" href="<?php echo base_url('admin_system/barang_form') ?>"><i class="fa fa-plus"></i> Tambah Data</a>
+                      <div class="clearfix"><a href="" onclick="window.print()" class="btn btn-primary btn-sm print">Print</a></div>
+                      <a class="btn btn-success btn-add" href="<?php echo base_url('admin_system/dokumen_form') ?>"><i class="fa fa-plus"></i> Tambah Data</a>
                     </div>
                   </div>
                   <!-- /.panel-heading -->
                   <div class="panel-body">
-                    <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                    <table width="100%" class="table table-striped table-bordered table-hover" id="example">
                       <thead>
                         <tr>
                           <th>ID</th>
-                          <th>Nama</th>
+                          <th>Nama Document</th>
+                          <th>Nama Perusahaan</th>
+                          <th>Kode Document</th>
                           <th>Deskripsi</th>
                           <th>Stock</th>
                           <th>Status</th>
@@ -31,20 +34,22 @@
                       <tbody>
                         <?php foreach ($data as $d1) { ?>
                           <tr>
-                            <td><?php echo $d1->id_barang ?></td>
+                            <td><?php echo $d1->id_dokumen ?></td>
                             <td><?php echo $d1->name ?></td>
+                            <td><?php echo $d1->nama_pt ?></td>
+                            <td><?php echo $d1->kode ?></td>
                             <td><?php echo $d1->desc ?></td>
                             <td><?php echo $d1->stock ?></td>
                             <td><?php echo $d1->status ?></td>
                             <td class="text-center">
-                              <form action="<?php echo base_url('admin_system/barang_form') ?>" method="post">
-                                <input type="hidden" name="id" value="<?php echo $d1->id_barang ?>">
+                              <form action="<?php echo base_url('admin_system/dokumen_form') ?>" method="post">
+                                <input type="hidden" name="id" value="<?php echo $d1->id_dokumen ?>">
                                 <button class="btn btn-info btn-xs btn-edit" type="submit" data-original-title="Ubah" data-placement="top" data-toggle="tooltip"><i class="fa fa-edit"></i></button>
                               </form>
                             </td>
                             <td class="text-center">
-                              <form action="<?php echo base_url('admin_system/barang_delete') ?>" method="post">
-                                <input type="hidden" name="id" value="<?php echo $d1->id_barang ?>">
+                              <form action="<?php echo base_url('admin_system/dokumen_delete') ?>" method="post">
+                                <input type="hidden" name="id" value="<?php echo $d1->id_dokumen ?>">
                                 <button class="btn btn-danger btn-xs btn-delete" type="submit" data-original-title="delete" data-placement="top" data-toggle="tooltip"><i class="fa fa-trash-o"></i></button>
                               </form>
                             </td>

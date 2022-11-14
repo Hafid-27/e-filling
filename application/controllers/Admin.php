@@ -30,21 +30,21 @@ class Admin extends PX_Controller
 		if ($this->session->userdata('petugas') == FALSE) {
 			redirect('admin');
 		} else
-			$jml_barang = $this->model_basic->select_all('tbl_barang');
+			$jml_dokumen = $this->model_basic->select_all('tbl_dokumen');
 		$jml_peminjam = $this->model_basic->select_all('tbl_peminjam');
 		$jml_pinjam = $this->model_basic->select_all('tbl_pinjam');
-		$ttl_barang = 0;
-		foreach ($jml_barang as $stock) {
-			$ttl_barang += $stock->stock;
+		$ttl_dokumen = 0;
+		foreach ($jml_dokumen as $stock) {
+			$ttl_dokumen += $stock->stock;
 		}
 		$ttl_pinjam = 0;
 		foreach ($jml_pinjam as $jml) {
 			$ttl_pinjam += $jml->jml;
 		}
 
-		$data['jml_barang'] = count($jml_barang);
+		$data['jml_dokumen'] = count($jml_dokumen);
 		$data['jml_peminjam'] = count($jml_peminjam);
-		$data['ttl_barang'] = $ttl_barang;
+		$data['ttl_dokumen'] = $ttl_dokumen;
 		$data['ttl_pinjam'] = $ttl_pinjam;
 		$data['content'] = $this->load->view('backend/admin/dashboard', $data, true);
 		$this->load->view('backend/index', $data);
