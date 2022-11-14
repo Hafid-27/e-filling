@@ -19,7 +19,7 @@
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                       <thead>
                         <tr>
-                          <th>ID</th>
+                          <!--<th>ID</th>-->
                           <th>Username</th>
                           <th>Password</th>
                           <th>Nama Karyawan</th>
@@ -31,7 +31,7 @@
                       <tbody>
                         <?php foreach ($data as $d1) { ?>
                           <tr>
-                            <td><?php echo $d1->id_peminjam ?></td>
+                            <!--<td><?php echo $d1->id_peminjam ?></td>-->
                             <td><?php echo $d1->username ?></td>
                             <td><?php echo $this->encrypt->decode($d1->password) ?></td>
                             <td><?php echo $d1->name ?></td>

@@ -150,9 +150,6 @@
                 <li>
                   <a href="<?php echo base_url('admin_system/laporan_pinjam') ?>"><i class="fa fa-flag-checkered fa-fw"></i> Dokumen Yang Sedang Dipinjam</a>
                 </li>
-                <li>
-                  <a href="<?php echo base_url('admin_system/form_laporan_bulanan') ?>"><i class="fa fa-flag-checkered fa-fw"></i> Laporan Bulanan</a>
-                </li>
               </ul>
             </li>
             <li>

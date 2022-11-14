@@ -20,7 +20,7 @@
                     <table width="100%" class="table table-striped table-bordered table-hover" id="example">
                       <thead>
                         <tr>
-                          <th>ID</th>
+                          <!-- <th>ID</th>-->
                           <th>Nama Document</th>
                           <th>Nama Perusahaan</th>
                           <th>Kode Document</th>
@@ -34,7 +34,7 @@
                       <tbody>
                         <?php foreach ($data as $d1) { ?>
                           <tr>
-                            <td><?php echo $d1->id_dokumen ?></td>
+                            <!-- <td><?php echo $d1->id_dokumen ?></td>-->
                             <td><?php echo $d1->name ?></td>
                             <td><?php echo $d1->nama_pt ?></td>
                             <td><?php echo $d1->kode ?></td>

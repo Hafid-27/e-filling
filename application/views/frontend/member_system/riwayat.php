@@ -19,7 +19,7 @@
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                       <thead>
                         <tr>
-                          <th>ID Pinjam</th>
+                          <!--<th>ID Pinjam</th>-->
                           <th>Nama Karyawan</th>
                           <th>Nama Dokumen</th>
                           <th>Jumlah Pinjam</th>
@@ -31,7 +31,7 @@
                       <tbody>
                         <?php foreach ($data as $d1) { ?>
                           <tr>
-                            <td><?php echo $d1->id_pinjam ?></td>
+                            <!--<td><?php echo $d1->id_pinjam ?></td>-->
                             <td><?php echo $d1->name_peminjam ?></td>
                             <td><?php echo $d1->name_dokumen ?></td>
                             <td><?php echo $d1->jml ?></td>

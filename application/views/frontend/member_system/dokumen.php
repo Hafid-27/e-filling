@@ -16,7 +16,7 @@
                     <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                       <thead>
                         <tr>
-                          <th>ID</th>
+                          <!--<th>ID</th>-->
                           <th>Nama Dokumen</th>
                           <th>Nama Perusahaan</th>
                           <th>kode</th>
@@ -28,7 +28,7 @@
                       <tbody>
                         <?php foreach ($data as $d1) { ?>
                           <tr>
-                            <td><?php echo $d1->id_dokumen ?></td>
+                            <!--<td><?php echo $d1->id_dokumen ?></td>-->
                             <td><?php echo $d1->name ?></td>
                             <td><?php echo $d1->nama_pt ?></td>
                             <td><?php echo $d1->kode ?></td>
